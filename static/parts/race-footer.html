@@ -1,0 +1,31 @@
+<div class="race-footer flex col-xs-12">
+	<div class="variable">
+		<span>{{volts | number: 1}}</span> V
+	</div>
+	<div class="variable">
+		<span>{{amps | number: 1}}</span> A
+	</div>
+	<div class="variable">
+		<span>{{rpm | number: 0}}</span> RPM
+	</div>
+	<div class="variable">
+		<span>{{speedMPS * 2.21 | number: 0}}</span> mph
+	</div>
+	<div class="variable">
+		<span>{{ampHours | number: 2}}</span> Ah
+	</div>
+	<div class="variable">
+		<span>{{temp1 | number: 0}}</span> &deg;C
+	</div>
+	<div class="variable">
+		<span>{{wattHoursPerKM | number: 2}}</span> Wh/km
+	</div>
+	<div class="variable">
+		<span>{{gearRatio | number: 2}}</span> GR
+	</div>
+</div>
+<div class="author col-xs-12 text-xs-center">
+	<p class="text-muted">
+		By <a href="https://www.linkedin.com/in/nagyben"><span>Ben Nagy</span></a> (JLR Driven) &mdash; in collaboration with <a href="http://wechook.com/"><span>weChook</span></a>
+	</p>
+</div>

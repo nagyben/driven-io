@@ -1,0 +1,21 @@
+div#footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  div#footer .race-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem; }
+  div#footer span {
+    font-weight: bold; }
+  div#footer .author {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    width: 100%; }
+    div#footer .author p {
+      margin: 0; }
+
+/*# sourceMappingURL=footer.css.map */

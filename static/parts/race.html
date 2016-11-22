@@ -1,0 +1,55 @@
+<div id="race" ng-init="init()">
+	<div id="googlemap" class="map">
+		<ng-map center="[{{lat}},{{lon}}]" zoom="12" disable-default-u-i="true">
+			<marker id="car" position="{{lat}},{{lon}}">
+			</marker>
+			<info-window id="info" visible-on-marker="car">
+				<div ng-non-bindable="">
+					<span>{{speedMPS * 2.21 | number: 1}}</span> mph
+				</div>
+			</info-window>
+		</ng-map>
+	</div>
+	<div id="graphs">
+		<div class="graph-container" ng-show="showVolts">
+			<div id="volts_graph" class="graph shadow " ></div>
+		</div>
+		<div class="graph-container" ng-show="showAmps">
+			<div id="amps_graph" class="graph shadow " ></div>
+		</div>
+		<div class="graph-container" ng-show="showRPM">
+			<div id="rpm_graph" class="graph shadow " ></div>
+		</div>
+		<div class="graph-container" ng-show="showSpeed">
+			<div id="speed_graph" class="graph shadow " ></div>
+		</div>
+	</div>
+	<div id="graph-control">
+		<div class="graph-control-container shadow">
+			<div class="form-check">
+				<label class="form-check-label">
+				<input class="form-check-input" type="checkbox" ng-model="showVolts" ng-click="reflowCharts()">
+				Volts
+			</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+				<input class="form-check-input" type="checkbox" ng-model="showAmps" ng-click="reflowCharts()">
+				Amps
+			</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+				<input class="form-check-input" type="checkbox" ng-model="showRPM" ng-click="reflowCharts()">
+				RPM
+			</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+				<input class="form-check-input" type="checkbox" ng-model="showSpeed" ng-click="reflowCharts()">
+				Speed
+			</label>
+			</div>
+		</div>
+	</div>
+</div>

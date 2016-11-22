@@ -1,0 +1,38 @@
+div,
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+#header, #footer {
+  height: 10vh;
+  padding: 0;
+  z-index: 4;
+}
+
+#main {
+  flex-grow: 1;
+  padding: 0;
+}
+
+.shadow {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.footer-shadow {
+  box-shadow: 0 -3px 6px rgba(0,0,0,0.16), 0 -3px 6px rgba(0,0,0,0.23);
+}
+
+a {
+  color: #961212;
+
+  &:hover{
+    color: #590808;
+  }
+}

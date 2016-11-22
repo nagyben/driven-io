@@ -1,0 +1,8 @@
+<div class="text-xs-center col-xs-12 p-a-2" ng-controller="roomController">
+	<h5 class="m-y-1">
+		Actively reporting cars
+	</h5>
+	<div class="list-group">
+		<a ui-sref="room({ room: room.name })" class="list-group-item list-group-item-action" ng-repeat="room in rooms">{{room.name}}</a>
+	</div>
+</div>

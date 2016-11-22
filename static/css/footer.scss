@@ -1,0 +1,27 @@
+div#footer {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	.race-footer {
+		display: flex;
+		flex-direction: row;
+		width: 100vw;
+		justify-content: space-around;
+		align-items: center;
+		font-size: 2rem;
+	}
+	
+	span {
+		font-weight: bold;
+	}
+	
+	.author {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		width: 100%;
+		
+		p {
+			margin: 0;
+		}
+	}
+}

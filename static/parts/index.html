@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="driven-io">
+	<head>
+		<script src="/js/lib/jquery-3.1.1.min.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="/js/lib/socket.io.js"></script>
+		<script src="/js/lib/angular.min.js"></script>
+		<script src="/js/lib/angular-ui-router.min.js"></script>
+		<script src="/js/lib/angular-socket-io.min.js"></script>
+		<script src="/js/lib/tether.min.js"></script>
+		<script src="/js/lib/bootstrap.min.js"></script>
+		
+		<script src="/js/app.js"></script>
+		<script src="/js/router.js"></script>
+		<script src="/js/controllers/roomController.js"></script>
+		<script src="/js/controllers/raceController.js"></script>
+		
+		<script src="/js/lib/ng-map.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALHmrPCRUREFeClpRdaWUxzbfU1A44ikY"></script>
+		
+		<link rel="stylesheet" href="/css/lib/tether.min.css">
+		<link rel="stylesheet" href="/css/lib/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/header.css">
+		<link rel="stylesheet" href="/css/footer.css">
+		<link rel="stylesheet" href="/css/race.css">
+		<title>Driven-io</title>
+	</head>
+	<body class="flex" ng-controller="raceController">
+		<div id="header" class="shadow" ui-view="header">
+			
+		</div>
+		<div id="main" ui-view="main">
+			
+		</div>
+		<div id="footer" class="footer-shadow" ui-view="footer">
+			
+		</div>
+	</body>
+</html>
